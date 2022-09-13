@@ -225,6 +225,9 @@ body {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
+
+    color: var(--white-color);
+    background-color: var(--accent-color);
 }
 
 /* features */
@@ -338,6 +341,7 @@ body {
     color: var(--white-color);
 
     text-decoration: none;
+    font-style: normal;
 
     font-size: 14px;
     line-height: 1.71;
@@ -351,6 +355,7 @@ body {
     color: var(--secondary-text-color);
 
     text-decoration: none;
+    font-style: normal;
 
     font-size: 14px;
     line-height: 1.71;
@@ -362,6 +367,13 @@ body {
 /* buttons */
 
 .services {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
     color: var(--title-color);
     background-color: var(--background-filter-buttons);
 }
@@ -419,7 +431,9 @@ body {
 
 .job-type {
     color: var(--primary-text-color);
-
-    font-size: 14px;
-    line-height: 2;
+ 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
 }
