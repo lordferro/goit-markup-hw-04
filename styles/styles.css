@@ -11,6 +11,7 @@
     --logo-border-color: #ececec;
     --portfolio-border-color: #eeeeee;
     --portfolio-grid-gap: 30px;
+    --icon-color: #afb1b8;
 }
 
 html {
@@ -151,6 +152,7 @@ body {
 
 .envelope,
 .smartphone {
+    fill: currentColor;
     margin-right: 10px;
 }
 
@@ -163,7 +165,8 @@ body {
 .envelope:hover,
 .envelope:focus {
     color: var(--accent-color);
-    stroke: var(--accent-color);
+    fill: var(--accent-color); 
+    
 }
 
 
@@ -215,6 +218,7 @@ body {
     line-height: 1.87;
     letter-spacing: 0.06em;
 
+    border: none;
     color: var(--white-color);
     background-color: var(--accent-color);
 }
@@ -235,10 +239,15 @@ body {
     margin-bottom: 10px;
 }
 
-.features-icon {    
+.features-icon {  
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+
     background-color: var(--background-filter-buttons);
     width: 270px;
     height: 120px;
+
 }
 
 
@@ -285,13 +294,13 @@ body {
     text-align: center;
 }
 
-.team-list .item {
+.team-list > .item {
     background-color: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-list .item + .item {
+.team-list > .item + .item {
     margin-left: 30px;
 }
 
@@ -299,22 +308,54 @@ body {
     margin-bottom: 30px;
 }
 
-.team-list p {
-    margin-bottom: 30px;
-}
 
 .team-list .title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.17;
 
-    margin-bottom: 10px;
-    
+    margin-bottom: 10px;    
 }
 
 .team-list .position {
     font-size: 16px;
     line-height: 1.17;
+
+    margin-bottom: 16px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+
+    margin: 0px 32px 30px 32px;
+}
+
+.social-link{
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    
+    justify-content: center;
+    align-items: center;    
+}
+
+.social-list .item + .item {
+    margin-left: 10px;
+}
+
+.icon {
+    fill: var(--icon-color);
+      
+}
+
+.social-link:hover,
+.social-link:focus,
+.social-link:hover .icon,
+.social-link:focus .icon {
+    background-color: var(--accent-color);
+    fill: var(--white-color);
 }
 
 /* footer */
