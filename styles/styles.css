@@ -30,6 +30,12 @@ p {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 body {
   background-color: var(--white-color);
   color: var(--primary-text-color);
@@ -96,9 +102,12 @@ body {
 /* Header */
 
 .page-header {
+  border-bottom: 1px solid var(--logo-border-color);
+}
+
+.header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--logo-border-color);
 }
 
 /* Navigation */
@@ -213,7 +222,7 @@ body {
 
   text-align: center;
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
   height: 600px;
   max-width: 1600px;
   margin-left: auto;
@@ -241,16 +250,22 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
 
+  width: 216px;
+  height: 60px;
+
   border: none;
   color: var(--white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 /* features */
-
-.features {
-  margin-bottom: 94px;
+.no-padding {
+  padding-top: 0;
 }
+
+
 
 .features-list {
   display: flex;
@@ -402,16 +417,15 @@ body {
 
 .footer-section {
   background-color: var(--secondary-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer {
   display: flex;
 }
 
-.logo-address {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+
 
 .footer .logo {
   display: block;
@@ -443,7 +457,7 @@ body {
 }
 
 .join {
-  margin: 72px auto 100px 70px;
+  margin: 12px auto 100px 70px;
 }
 
 .join-title {
@@ -508,7 +522,7 @@ body {
 .filter-button {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .filter-button .item + .item {
@@ -540,10 +554,6 @@ body {
   text-decoration: none;
 }
 
-.element-filter img {
-  display: block;
-}
-
 .element-description {
   padding: 20px 24px;
   border: 1px solid var(--portfolio-border-color);
@@ -555,7 +565,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
 
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .job-type {
