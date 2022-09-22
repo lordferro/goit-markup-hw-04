@@ -14,15 +14,6 @@
   --icon-color: #afb1b8;
 }
 
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 h1,
 h2,
 h3,
@@ -336,8 +327,9 @@ body {
   margin-left: 30px;
 }
 
-.team-list img {
-  margin-bottom: 30px;
+.team-thumb {
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .team-list .title {
@@ -359,7 +351,6 @@ body {
   display: flex;
   justify-content: center;
 
-  margin: 0px 32px 30px 32px;
 }
 
 .social-link {
@@ -376,13 +367,7 @@ body {
   margin-left: 10px;
 }
 
-.social-link:hover,
-.social-link:focus,
-.social-link:hover .icon,
-.social-link:focus .icon {
-  background-color: var(--accent-color);
-  fill: var(--white-color);
-}
+/* Hover для этого отдела расположены в футере */
 
 /* Our Clients */
 
@@ -424,6 +409,7 @@ body {
 
 .footer {
   display: flex;
+  align-items: baseline;
 }
 
 
@@ -458,7 +444,7 @@ body {
 }
 
 .join {
-  margin: 12px auto 100px 70px;
+  margin: 0 auto 0 70px;
 }
 
 .join-title {
@@ -482,6 +468,10 @@ body {
 
 .social-link.in-footer {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon {
+  fill: var(--white-color);
 }
 
 .social-link:hover,
