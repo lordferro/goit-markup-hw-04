@@ -33,8 +33,7 @@ body {
   color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
-  margin: 8px;
+  letter-spacing: 0.03em; 
 }
 
 .section {
@@ -535,8 +534,12 @@ body {
   margin-top: var(--portfolio-grid-gap);  
 }
 
-.element-filter .item:hover,
-.element-filter .item:focus {
+.filter-link {
+  display: block;
+}
+
+.element-filter .filter-link:hover,
+.element-filter .filter-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
